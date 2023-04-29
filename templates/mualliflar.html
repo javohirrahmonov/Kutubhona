@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Muallif</title>
+</head>
+<body>
+    <br>
+    <h1>Bizda bor mualliflar royhati</h1>
+    <br>
+    <hr>
+    {% for muallif in mualliflar%}
+    <h2>{{muallif.id}}) {{muallif}}</h2>
+    <p>{{muallif.ism}}ning kitob soni:{{muallif.kitoblar_soni}}</p>
+    {%endfor%}
+</body>
+</html>

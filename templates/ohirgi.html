@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Record</title>
+</head>
+<body>
+    <br>
+    <h1>Eng ohirgi 3ta recordlar royhati</h1>
+    <br>
+    <hr>
+    {% for record in record%}
+    <h2>{{record.id}}) {{record.talaba.ism}} ismli talaba {{record.admin.ism}} ismlar admindan {{record.kitob.nom}} kitobini oldi sanasi{{record.olingan_sana}}</h2>
+    {%endfor%}
+</body>
+</html>

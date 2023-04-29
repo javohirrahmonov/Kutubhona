@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Talabalar</title>
+</head>
+<body>
+    <br>
+    <h1>Bizda bor talabalar royhati</h1>
+    <br>
+    <br>
+    <form method="get">
+        <input type="text" name="qidiruv">
+        <button>Qidirish</button>
+    </form>
+    <hr>
+    {% for talaba in students%}
+    <h2>{{talaba.id}}.{{talaba}}</h2>
+    <p>{{talaba.ism}}ning kitob soni:{{talaba.kitob_soni}}</p>
+    <a href="/ochirish/{{talaba.id}}/"><button>O'chirish</button></a>
+    <br>
+    {%endfor%}
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kitob</title>
+</head>
+<body>
+    <br>
+    <h1>Bizda bor kitoblar royhati</h1>
+    <br>
+    <br>
+        <form method="get">
+        <input type="text" name="qidiruv">
+        <button>Qidirish</button>
+    </form>
+    <hr>
+    {% for kitob in kitoblar%}
+    <h2>{{kitob.id}}) {{kitob.nom}}</h2>
+    <p>{{kitob.nom}}ning kitob muallifi:{{kitob.muallif.ism}}</p>
+    <a href="/kitob_ochir/{{kitob.id}}/"><button>O'chirish</button></a>
+    {%endfor%}
+</body>
+</html>

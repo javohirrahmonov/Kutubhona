@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>A_li</title>
+</head>
+<body>
+    <br>
+    <h1>Kutubhonada ismda a harfi qatnashgan talabalar royhati</h1>
+    <br>
+    <hr>
+    {% for talaba in students%}
+    <h2>{{talaba.id}}.{{talaba}}</h2>
+    {%endfor%}
+</body>
+</html>

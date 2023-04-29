@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bitiruvchi</title>
+</head>
+<body>
+    <br>
+    <h1>Kutubhonadagi bitiruvchi talabalar royhati</h1>
+    <br>
+    <hr>
+    {% for talaba in students%}
+    <h2>{{talaba.id}}){{talaba}}</h2>
+    <p>{{talaba.ism}} {{talaba.kurs}} kursda oqiydi</p>
+    {%endfor%}
+</body>
+</html>

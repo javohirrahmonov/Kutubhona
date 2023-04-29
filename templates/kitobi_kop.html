@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kitob_kop</title>
+</head>
+<body>
+    <h1>Kitobi eng kop 3 ta muallif</h1>
+    <br>
+    {% for muallif in muallif%}
+    <h3>Muallif idsi {{kitob.id}}= ismi{{muallif.ism}} kitoblar soni {{muallif.kitoblar_soni}}</h3>
+    {%endfor%}
+</body>
+</html>

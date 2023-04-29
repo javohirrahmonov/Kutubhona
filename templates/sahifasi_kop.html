@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kitob_kop</title>
+</head>
+<body>
+    <h1>Sahifasi eng kop 3 ta kitob</h1>
+    <br>
+    {% for kitob in kitob%}
+    <h3>Kitob idsi {{kitob.id}}) nomi{{kitob.nom}}</h3>
+    <p>
+    muallifi {{kitob.muallif.ism}} <br>
+    sahifalar_soni {{kitob.sahifa}}<br>
+    janri {{kitob.janr}} </p>
+    {%endfor%}
+</body>
+</html>

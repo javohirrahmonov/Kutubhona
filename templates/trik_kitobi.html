@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kitob</title>
+</head>
+<body>
+    <br>
+    <h1>Bizda bor trik mualliflarning kitoblari royhati</h1>
+    <br>
+    <hr>
+    {% for kitob in kitob%}
+    <h2>{{kitob.id}}) {{kitob.nom}}</h2>
+    <p>{{kitob.nom}}ning kitob muallifi:{{kitob.muallif.ism}}</p>
+    {%endfor%}
+</body>
+</html>
